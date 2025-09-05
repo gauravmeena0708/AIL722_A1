@@ -1,0 +1,27 @@
+
+==================================================
+RUNNING EXPERIMENTS FOR NON-STATIONARY ENVIRONMENT
+==================================================
+
+--- Running Time-Dependent Value Iteration ---
+Execution Time: 1.2447 seconds
+Total Transition Calls: 112000
+
+--- Running Standard Value Iteration (for comparison) ---
+Execution Time: 3.9516 seconds
+Total Transition Calls: 173600
+
+--- Policy Performance Evaluation (20 Episodes) ---
+Time-Dependent VI Mean Reward: 37.70 +/- 39.62
+Standard VI Mean Reward:         23.65 +/- 44.71
+
+--- Generating GIFs ---
+Starting rollout from position: (0, 10, 0)
+
+Reached terminal state.
+Episode GIF saved to ./output_seeds/non_stationary_vi.gif
+Starting rollout from position: (0, 10, 0)
+
+Reached terminal state.
+Episode GIF saved to ./output_seeds/standard_vi_on_degraded.gif
+GIFs saved as 'non_stationary_vi.gif' and 'standard_vi_on_degraded.gif'.

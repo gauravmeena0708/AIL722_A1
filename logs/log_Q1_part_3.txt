@@ -1,0 +1,31 @@
+
+==================================================
+RUNNING EXPERIMENTS FOR PRIORITIZED VI (GAMMA = 0.95)
+==================================================
+
+--- Running Prioritized Value Iteration ---
+Execution Time: 0.0827 seconds
+Converged in 401 updates.
+Total Transition Calls: 27727
+
+--- Running Standard Value Iteration ---
+Execution Time: 0.2913 seconds
+Converged in 30 iterations.
+Total Transition Calls: 86800
+
+--- Running Policy Iteration ---
+Execution Time: 2.9752 seconds
+Converged in 26 iterations.
+Total Transition Calls: 1002400
+
+==================================================
+PERFORMANCE COMPARISON
+==================================================
+Algorithm                 Time (s)     Transitions     Updates/Iters
+-----------------------------------------------------------------
+Prioritized VI            0.0827       27,727          401         
+Standard VI               0.2913       86,800          30          
+Policy Iteration          2.9752       1,002,400       26          
+-----------------------------------------------------------------
+
+Prioritized VI reduced transition calls by: 68.06%

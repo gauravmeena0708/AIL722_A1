@@ -1,0 +1,66 @@
+
+==================================================
+RUNNING EXPERIMENTS FOR GAMMA = 0.95
+==================================================
+
+--- Running Policy Iteration ---
+Execution Time: 2.9186 seconds
+Converged in 26 iterations.
+Total Transition Calls: 1002400
+
+--- Running Value Iteration ---
+Execution Time: 0.2819 seconds
+Converged in 30 iterations.
+Total Transition Calls: 86800
+
+Policies are identical: True
+Observation: The policies are identical, as expected since both algorithms converge to an optimal policy.
+
+--- Policy Performance Evaluation (20 Episodes) ---
+Policy Iteration Mean Reward: 47.00 +/- 21.79
+Value Iteration Mean Reward:  47.00 +/- 21.79
+
+--- Generating GIFs ---
+Starting rollout from position: (0, 10, 0)
+
+Reached terminal state.
+Episode GIF saved to ./output_seeds/policy_iteration_gamma0.95.gif
+Starting rollout from position: (0, 10, 0)
+
+Reached terminal state.
+Episode GIF saved to ./output_seeds/value_iteration_gamma0.95.gif
+GIFs generated successfully.
+
+==================================================
+RUNNING EXPERIMENTS FOR GAMMA = 0.3
+==================================================
+
+--- Running Policy Iteration ---
+Execution Time: 0.6715 seconds
+Converged in 26 iterations.
+Total Transition Calls: 226800
+
+--- Running Value Iteration ---
+Execution Time: 0.1433 seconds
+Converged in 16 iterations.
+Total Transition Calls: 47600
+
+Policies are identical: False
+Observation: The policies may differ in states where multiple actions yield the same maximum value. This is due to np.argmax's tie-breaking behavior.
+
+==================================================
+RUNNING EXPERIMENTS FOR GAMMA = 0.5
+==================================================
+
+--- Running Policy Iteration ---
+Execution Time: 0.8163 seconds
+Converged in 26 iterations.
+Total Transition Calls: 280000
+
+--- Running Value Iteration ---
+Execution Time: 0.2505 seconds
+Converged in 26 iterations.
+Total Transition Calls: 75600
+
+Policies are identical: True
+Observation: The policies are identical, as expected since both algorithms converge to an optimal policy.
